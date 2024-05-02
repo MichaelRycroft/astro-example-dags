@@ -23,8 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Install pnpm
-      run: npm install -g pnpm
-
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.4
+      with:
+        package-manager: pnpm
+        pnpm-version: pnpm@latest
