@@ -23,10 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Node.js and pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        pnpm-version: 'latest'
+    - name: Install pnpm
+      run: npm install -g pnpm
 
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.4
