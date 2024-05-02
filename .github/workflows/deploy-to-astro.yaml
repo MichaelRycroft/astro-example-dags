@@ -26,5 +26,5 @@ jobs:
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.4
       with:
-        package-manager: pnpm
-        pnpm-version: pnpm@latest
+          package-manager: pnpm
+          pnpm-version: 8.7.0
