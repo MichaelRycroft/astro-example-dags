@@ -18,3 +18,4 @@ jobs:
       with:
         deployment-id: clvjxo4z608gg01mdyk2j6il3
         parse: true
+        version: pnpm@latest
