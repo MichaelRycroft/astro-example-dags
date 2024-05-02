@@ -23,8 +23,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Check out the repo
+      uses: actions/checkout@v3
+      with:
+        package-manager: pnpm
+        pnpm-version: pnpm@latest
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.4
-      with:
-          package-manager: pnpm
-          pnpm-version: 8.7.0
