@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out the repo
-      uses: actions/checkout@v3
+	- name: Check out the repo
+      uses: actions/checkout@v4
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.4
