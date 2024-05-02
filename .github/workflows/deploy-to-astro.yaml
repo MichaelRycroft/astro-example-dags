@@ -25,5 +25,3 @@ jobs:
     steps:
       - name: Deploy to Astro
         uses: astronomer/deploy-action@v0.4
-        with:
-          checkout: 52fa6f2
